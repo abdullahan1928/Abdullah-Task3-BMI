@@ -1,31 +1,23 @@
-<<<<<<< HEAD
-# BmiCalculator
+# BMI Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
+The site is deployed on https://bmicalculator1928.netlify.app/
 
-## Development server
+## Basic Interface
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![image](https://user-images.githubusercontent.com/74107257/203014086-7e36b37f-0ed1-4f91-869c-07c2c602dd9f.png)
 
-## Code scaffolding
+### 1. For Normal Weight
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![image](https://user-images.githubusercontent.com/74107257/203014417-ddf70911-41d2-4f8d-bee1-ce467dc09bf6.png)
 
-## Build
+### 2. For Underweight
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://user-images.githubusercontent.com/74107257/203020332-e2d7ba94-c114-49fc-88ca-c9fc5b02db6d.png)
 
-## Running unit tests
+### 3. For Overweight
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![image](https://user-images.githubusercontent.com/74107257/203020721-0b918834-0151-4065-9993-309e41363c3f.png)
 
-## Running end-to-end tests
+### 4. For Obese
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# Abdullah-Task3-BMI
->>>>>>> 76f7eb5da8fcad55c225ac5984f4a7e1a1d116c8
+![image](https://user-images.githubusercontent.com/74107257/203020761-24cb7df9-1f56-438b-a99a-c9423ecdbb29.png)
