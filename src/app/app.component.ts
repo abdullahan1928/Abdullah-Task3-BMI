@@ -36,4 +36,18 @@ export class AppComponent {
       this.bmiDesc = 'Error';
     }
   }
+
+  bmiClasses() {
+    if (this.bmi < 18.5) {
+      return 'bmi-low';
+    } else if (this.bmi >= 18.5 && this.bmi <= 24.9) {
+      return 'bmi-normal';
+    } else if (this.bmi >= 25 && this.bmi <= 29.9) {
+      return 'bmi-high';
+    } else if (this.bmi >= 30) {
+      return 'bmi-obese';
+    } else {
+      return '';
+    }
+  }
 }

@@ -21,10 +21,14 @@ body {
     color: purple;
 }
 
-.bmi-high {
-    color: red;
-}
-
 .bmi-normal {
     color: green;
+}
+
+.bmi-high {
+    color: rgb(255, 0, 170);
+}
+
+.bmi-obese {
+    color: red;
 }

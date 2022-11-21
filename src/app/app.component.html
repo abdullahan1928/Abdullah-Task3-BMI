@@ -14,8 +14,7 @@
         oninput="validity.valid||(value='')"
         required
       />
-      <span class="
-        parameter">Height</span>
+      <span class="parameter">Height</span>
       <span class="unit">Inches</span>
     </div>
 
@@ -41,11 +40,7 @@
     BMI =
     <span
       class="bmi-value"
-      [ngClass]="{
-      'bmi-low': bmi < 18.5,
-      'bmi-normal': bmi >= 18.5 && bmi < 25,
-      'bmi-high': bmi >= 25
-    }"
+      [ngClass]="bmiClasses()"
     >
       {{bmi}}
     </span>
@@ -70,11 +65,7 @@
     You are
     <span
       class="desc-value"
-      [ngClass]="{
-      'bmi-low': bmi < 18.5,
-      'bmi-normal': bmi >= 18.5 && bmi < 25,
-      'bmi-high': bmi >= 25
-    }"
+      [ngClass]="bmiClasses()"
     >
       {{bmiDesc}}!
     </span>
