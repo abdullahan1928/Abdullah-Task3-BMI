@@ -1,0 +1,151 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+    max-width: 500px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    h2 {
+        position: absolute;
+        top: -50px;
+        background: black;
+        color: goldenrod;
+        border-radius: 2px;
+        padding: 10px;
+        font-family: 'Bigelow Rules';
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    form {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 5px;
+
+        .input-box {
+            position: relative;
+            width: 250px;
+
+            input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid rgba(46, 46, 46, 0.25);
+                border-radius: 5px;
+                outline: none;
+                font-size: 1em;
+                transition: 0.5s;
+                letter-spacing: 0.1em;
+
+                &:valid~.parameter,
+                &:focus~.parameter {
+                    color: black;
+                    transform: translate(10px, -7px);
+                    font-size: 0.65em;
+                    padding: 0 10px;
+                    background: white;
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                    letter-spacing: 0.2em;
+                    font-weight: normal;
+                }
+
+                &:valid,
+                &:focus {
+                    border: 1px solid black;
+                }
+            }
+
+            .parameter {
+                color: rgba(29, 21, 7, 0.25);
+                font-weight: 500;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px;
+                pointer-events: none;
+                font-size: 1em;
+                text-transform: uppercase;
+                transition: 0.5s;
+                letter-spacing: 0.07em;
+            }
+
+            .unit {
+                color: rgba(29, 21, 7, 0.25);
+                font-weight: 500;
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 10px;
+                pointer-events: none;
+                font-size: 1em;
+                text-transform: uppercase;
+                transition: 0.5s;
+                letter-spacing: 0.07em;
+            }
+
+            &:nth-child(2) {
+                input {
+
+                    &:valid~.parameter,
+                    &:focus~.parameter {
+                        background: black;
+                        color: goldenrod;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bmi {
+        font-size: 18px;
+        font-weight: 500;
+        position: absolute;
+        top: 200px;
+        background: black;
+        color: goldenrod;
+        border-radius: 2px;
+        padding: 15px;
+    }
+
+}
+
+.new-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+    padding-bottom: 100px;
+    border: 2px solid #ccc;
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    .desc {
+        font-size: 18px;
+        font-weight: 500;
+        position: absolute;
+        top: 90px;
+        background: black;
+        color: goldenrod;
+        border-radius: 2px;
+        padding: 15px;
+    }
+}

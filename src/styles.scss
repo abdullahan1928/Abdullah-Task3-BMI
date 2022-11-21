@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(to left,
+            /* rgba(21, 187, 182, 0.5) 0%,
+            rgba(199, 41, 41, 0.5)) 100%; */
+            rgba(7, 27, 82, 1) 0%,
+            rgba(0, 128, 128, 1)) 100%;
+    text-align: center;
+}
+
+.bmi-value {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bmi-low {
+    color: purple;
+}
+
+.bmi-high {
+    color: red;
+}
+
+.bmi-normal {
+    color: green;
+}

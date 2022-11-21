@@ -1,0 +1,82 @@
+<div class='app-container'>
+  <h2 class="heading">
+    BMI CALCULATOR
+  </h2>
+
+  <form>
+    <div class="input-box">
+      <input
+        type="number"
+        value="height"
+        (keyup)="onKeyHeight($event)"
+        (keyup)="calculateBMI()"
+        min="1"
+        oninput="validity.valid||(value='')"
+        required
+      />
+      <span class="
+        parameter">Height</span>
+      <span class="unit">Inches</span>
+    </div>
+
+    <div class="input-box">
+      <input
+        type="number"
+        value="weight"
+        (keyup)="onKeyWeight($event)"
+        (keyup)="calculateBMI()"
+        min="1"
+        oninput="validity.valid||(value='')"
+        required
+      />
+      <span class="parameter">Weight</span>
+      <span class="unit">Pounds</span>
+    </div>
+  </form>
+
+  <div
+    class="bmi"
+    *ngIf="height && weight; else enterInput"
+  >
+    BMI =
+    <span
+      class="bmi-value"
+      [ngClass]="{
+      'bmi-low': bmi < 18.5,
+      'bmi-normal': bmi >= 18.5 && bmi < 25,
+      'bmi-high': bmi >= 25
+    }"
+    >
+      {{bmi}}
+    </span>
+  </div>
+
+  <ng-template #enterInput>
+    <div class="bmi">
+      <span class="bmi-value">
+        Enter Your Height and Weight
+      </span>
+    </div>
+  </ng-template>
+
+
+</div>
+
+<div
+  class="new-border"
+  *ngIf="height && weight"
+>
+  <div class="desc">
+    You are
+    <span
+      class="desc-value"
+      [ngClass]="{
+      'bmi-low': bmi < 18.5,
+      'bmi-normal': bmi >= 18.5 && bmi < 25,
+      'bmi-high': bmi >= 25
+    }"
+    >
+      {{bmiDesc}}!
+    </span>
+  </div>
+</div>
